@@ -6,7 +6,6 @@ require("dotenv").config();
 const path = require("path");
 app.use(bodyParser.json());
 
-
 app.use("/static", express.static(__dirname));
 app.use(express.static(path.join(__dirname, "/../public")));
 app.use(express.static(path.join(__dirname, "/../public/js")));
@@ -19,6 +18,10 @@ app.get("/setup", (req, res) => {
 
 app.get("/", (req, res) => {
   res.sendFile(`${path.join(__dirname, "/../public/pages/index.html")}`);
+});
+
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "/../public/pages/registration.html"));
 });
 
 app.get("/login", (req, res) => {

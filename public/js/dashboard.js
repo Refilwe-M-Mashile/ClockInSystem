@@ -16,7 +16,7 @@ document.getElementsByClassName("close")[0].addEventListener("click", () => {
 
 document.getElementById("clock-in").addEventListener("click", () => {
   modal.style.display = "block";
-  alert(document.getElementById("clock-in").innerHTML)
+  alert(document.getElementById("clock-in").innerHTML);
   document.getElementById("clock-in").innerHTML = "Check-out";
 });
 
@@ -26,10 +26,8 @@ window.onclick = (event) => {
   }
 };
 
-document.getElementById("btn-submit").addEventListener("click",async () => {
+document.getElementById("btn-submit").addEventListener("click", async () => {
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
-  fetch('http://localhost:5000/checkin',() => {
-    
-  });
-})
+  fetch("http://localhost:5000/checkin", () => {});
+});

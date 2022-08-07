@@ -7,8 +7,7 @@ a {
 }
 
 .box {
-  
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 #reg-svg {
@@ -20,7 +19,7 @@ a {
   background: #D9D9D9;
   padding: 20px;
   width: 30%;
-  /* float: left; */
+  float: left;
   height: 12hv;
   margin: 0px;
 }
@@ -33,7 +32,7 @@ a {
   background-color: #6C63FF;
   width: 40%;
   height: 22.5em;
-  /* float: left; */
+  float: left;
   margin: 0px;
 }
 
@@ -99,6 +98,7 @@ ul {
 .logo {
   float: left;
   font-weight: 900;
+  font-size: xx-large;
 }
 
 li a {

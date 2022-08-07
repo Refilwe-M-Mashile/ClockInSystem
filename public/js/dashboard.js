@@ -25,3 +25,11 @@ window.onclick = (event) => {
     modal.style.display = "none";
   }
 };
+
+document.getElementById("btn-submit").addEventListener("click",async () => {
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  fetch('http://localhost:5000/checkin',() => {
+    
+  });
+})

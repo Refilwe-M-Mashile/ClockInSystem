@@ -16,7 +16,7 @@ document.getElementsByClassName("close")[0].addEventListener("click", () => {
 
 document.getElementById("clock-in").addEventListener("click", () => {
   modal.style.display = "block";
-  alert(document.getElementById("clock-in").innerHTML);
+  console.log(document.getElementById("clock-in").innerHTML);
   document.getElementById("clock-in").innerHTML = "Check-out";
 });
 
@@ -29,5 +29,12 @@ window.onclick = (event) => {
 document.getElementById("btn-submit").addEventListener("click", async () => {
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
-  fetch("http://localhost:5000/checkin", () => {});
+  alert(`You have clocked in at ${time} on ${date}`);
+  const dataBox = document.getElementById("data-box");
+  const node = document.createTextNode(`<div class="data-item">${data}&t ${
+    30 * Math.random() * 9 + 1
+  }</div>`);
+  dataBox.appendChild(node);
+
+  //fetch("http://localhost:5000/checkin", () => {});
 });

@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/index.css" rel="stylesheet">
     <title>Login | Spotless</title>
 </head>
 
 <body>
+    <h2>LogIn Below</h2>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="logo">Spotless</a></li>
+                <li><a href="/history" class="nav-item">History</a></li>
+                <li><a href="/payslip" class="nav-item">Payslip</a></li>
+                <li id="clock-in"><a class="nav-item">Clock</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form id="form-register" action="/dashboard">
+    <div class="form-item">
+   
+
+    <div class="form-item">
+        <label for="name">Email Address</label><br>
+        <input id="email" type="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-item">
+        <label for="name">Password</label><br>
+        <input id="tel" type="password" placeholder="Password" required>
+    </div>
+    <button id="btn-register" type="submit">login</button>
+</form>
+
 
 </body>
 

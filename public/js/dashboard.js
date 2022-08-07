@@ -16,6 +16,8 @@ document.getElementsByClassName("close")[0].addEventListener("click", () => {
 
 document.getElementById("clock-in").addEventListener("click", () => {
   modal.style.display = "block";
+  alert(document.getElementById("clock-in").innerHTML)
+  document.getElementById("clock-in").innerHTML = "Check-out";
 });
 
 window.onclick = (event) => {

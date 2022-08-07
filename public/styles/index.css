@@ -6,6 +6,25 @@ a {
   text-decoration: none;
 }
 
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#reg-svg {
+  width: 40%;
+}
+
+#form-register {
+  width: 100%;
+  height: 100%;
+  background: #FFBD59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   color: white;
   background-color: #6C63FF;

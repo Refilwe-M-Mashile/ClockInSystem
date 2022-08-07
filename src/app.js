@@ -24,7 +24,7 @@ app.post("/register", (req, res) => {
   console.log(req.body);
   const { firstname, surname, email, phone } = req.body;
   db.push({ employee: { firstname, surname, email, phone } });
-  res.redirect("/login");
+  res.redirect("/dashboard");
 });
 
 app.get("/login", (req, res) => {

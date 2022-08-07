@@ -21,15 +21,24 @@ a {
   background: #D9D9D9;
   padding: 20px;
 }
-.form-item{
+
+.form-item {
   padding: 2%;
 }
 
-input{
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+input {
   border-radius: 30px;
-  color: white;
+  color: black;
   padding: 10px;
 }
+
 button {
   color: white;
   background-color: #6C63FF;
@@ -49,16 +58,17 @@ button {
   justify-content: center;
   align-items: center;
   margin: 10%;
-  
+
 }
 
 .left {
   flex: 1;
 }
 
-.right{
+.right {
   margin-top: 0%;
 }
+
 .container {
   background-color: #d9d9d9;
   height: 89vh;

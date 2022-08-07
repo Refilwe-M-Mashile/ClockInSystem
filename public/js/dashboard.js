@@ -26,15 +26,18 @@ window.onclick = (event) => {
   }
 };
 
-document.getElementById("btn-submit").addEventListener("click", async () => {
+document.getElementById("btn-submit").addEventListener("click", async (e) => {
+  e.preventDefault();
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
-  alert(`You have clocked in at ${time} on ${date}`);
+
   const dataBox = document.getElementById("data-box");
-  const node = document.createTextNode(`<div class="data-item">${data}&t ${
-    30 * Math.random() * 9 + 1
-  }</div>`);
-  dataBox.appendChild(node);
+  const di = document.createElement("div");
+  di.className = "data-item";
+  di.innerHTML = `${time}${date} R${
+    Math.floor(30 * Math.random() * 9) + 1
+  }`;
+  dataBox.appendChild(di);
 
   //fetch("http://localhost:5000/checkin", () => {});
 });

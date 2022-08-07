@@ -6,19 +6,12 @@ require("dotenv").config();
 const path = require("path");
 app.use(bodyParser.json());
 
-const db = {
-  rate: 30,
-  currency: "ZAR",
-  employer: "Josh",
-  employee: "Merriam",
-};
 
 app.use("/static", express.static(__dirname));
 app.use(express.static(path.join(__dirname, "/../public")));
 app.use(express.static(path.join(__dirname, "/../public/js")));
-app.use(express.static(path.join(__dirname, "/public/pages")));
-
-console.log(`${path.join(__dirname, "/../public/js")}`);
+app.use(express.static(path.join(__dirname, "/../public/pages")));
+app.use(express.static(path.join(__dirname, "/../public/styles")));
 
 app.get("/setup", (req, res) => {
   res.send(db);
@@ -29,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "/../pages/login.html"));
+  res.sendFile(path.join(__dirname, "/../public/pages/login.html"));
 });
 
 app.get("/history", (req, res) => {

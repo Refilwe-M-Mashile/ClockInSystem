@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | Employee</title>
+    <link href="styles/index.css" rel="stylesheet">
+    <script src="../js/dashboard.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">Spotless</a></li>
+                <li><a href="#" class="nav-item">Logout</a></li>
+                <li><a href="#" class="nav-item">History</a></li>
+                <li><a href="#" class="nav-item">Payslip</a></li>
+                <li id="clock-in"><a class="nav-item">Clock</a></li>
+                
+               
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="">
+                <ul>
+                    <li id="rate"></li>
+                    <li id="employer"></li>
+                    <li id="user-greeting"></li>
+                </ul>
+            </div>
+
+
+            <hr class="ruler">
+
+            <h1 id="history-msg">No History</h1>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form action="post">
+                        <h1>Clock in</h1>
+                        <label>Date:</label>
+                        <br>
+                        <input type="date" id="date" placeholder="date">
+                        <br>
+                        <label>Time:</label>
+                        <br>
+                        <input type="time" id="time" placeholder="time">
+                        <br>
+                        <input type="submit" id="btn-submit">
+                    </form>
+                    
+                </div>
+
+            </div> 
+        </div>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

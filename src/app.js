@@ -32,7 +32,7 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/history", (req, res) => {
-  res.sendFile(path.join(__dirname + "/../pages/history.html"));
+  res.sendFile(path.join(__dirname + "/../public/pages/history.html"));
 });
 
 app.get("/dashboard", (req, res) => {

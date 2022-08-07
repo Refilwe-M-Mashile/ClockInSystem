@@ -1,0 +1,1 @@
+const btnRegister = document.querySelector('#btnRegister');

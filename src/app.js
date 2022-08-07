@@ -12,16 +12,19 @@ app.use(express.static(path.join(__dirname, "/../public/js")));
 app.use(express.static(path.join(__dirname, "/../public/pages")));
 app.use(express.static(path.join(__dirname, "/../public/styles")));
 
-app.get("/setup", (req, res) => {
-  res.send(db);
-});
-
+const db = [];
 app.get("/", (req, res) => {
   res.sendFile(`${path.join(__dirname, "/../public/pages/index.html")}`);
 });
 
 app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "/../public/pages/registration.html"));
+});
+app.post("/register", (req, res) => {
+  console.log(req.body);
+  const { firstname, surname, email, phone } = req.body;
+  db.push({ employee: { firstname, surname, email, phone } });
+  res.redirect("/login");
 });
 
 app.get("/login", (req, res) => {

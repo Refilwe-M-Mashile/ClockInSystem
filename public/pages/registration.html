@@ -13,34 +13,41 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#" class="logo">Spotless</a></li>
-                <li><a href="#" class="nav-item">Logout</a></li>
+                <li><a href="/" class="logo">Spotless</a></li>
+                <li><a href="/" class="nav-item">Logout</a></li>
                 <li><a href="#" class="nav-item">History</a></li>
                 <li><a href="#" class="nav-item">Payslip</a></li>
                 <li id="clock-in"><a class="nav-item">Clock</a></li>
             </ul>
         </nav>
     </header>
-    <div class = "box">
-    <form id="form-register">
-        <label for="name">Name</label>
-        <input type="text" placeholder="Name" required>
-        <label for="name">Surname</label>
-        <input type="text" placeholder="Surname" required>
-        <label for="name">Email Address</label>
-        <input type="email" placeholder="Email Address" required>
-        <label for="name">Phone Number</label>
-        <input type="tel" placeholder="Phone Number" required>
-        <label for="name">Rate</label>
-        <input type="number" min="24" placeholder="Rate per hour" required>
-        <input id="btn-register" type="submit">
-    </form>
-    <div class="side-image">
-        <img id = "reg-svg" src="log.svg" alt="">
-    </div>
-</div>
-    <div>
-        <img src="../images/log.svg" alt="">
+    <div class="box">
+        <form id="form-register">
+            <div class="form-item">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-item">
+                <label for="name">Surname</label><br>
+                <input type="text" placeholder="Surname" required>
+            </div>
+
+            <div class="form-item">
+                <label for="name">Email Address</label><br>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-item">
+                <label for="name">Phone Number</label><br>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+
+            <label for="name">Rate</label><br>
+            <input type="number" min="24" placeholder="Rate per hour" required>
+            <input id="btn-register" type="submit">
+        </form>
+        <div class="side-image">
+            <img id="reg-svg" src="../images/log.svg" alt="svg" />
+        </div>
     </div>
 
 </body>
